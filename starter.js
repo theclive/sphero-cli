@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 var sphero = require("sphero");
-var spheroId = 'C2:92:5C:11:E1:F8';
+// var spheroId = 'C2:92:5C:11:E1:F8';
+var spheroId = process.argv[2];
 var orb = sphero(spheroId);
 
 var stdin = process.openStdin()
@@ -18,7 +19,7 @@ stdin.addListener("data", function(data) {
 orb.connect(function() {
 	console.log("connected... waiting for input:")
 
-	orb.streamImuAngles();
+	// orb.streamImuAngles();
 
 	orb.on("imuAngles", function(data) {
 		console.log("imuAngles:");
@@ -40,18 +41,18 @@ orb.connect(function() {
 
 
 	// orb.streamOdometer()
-	// orb.on("odometer", function(data) {
-	// 	console.log("odometer:");
-	// 	console.log("  sensor:", data.xOdometer.sensor);
-	// 	console.log("    range:", data.xOdometer.range);
-	// 	console.log("    units:", data.xOdometer.units);
-	// 	console.log("    value:", data.xOdometer.value[0]);
+	orb.on("odometer", function(data) {
+		console.log("odometer:");
+		console.log("  sensor:", data.xOdometer.sensor);
+		console.log("    range:", data.xOdometer.range);
+		console.log("    units:", data.xOdometer.units);
+		console.log("    value:", data.xOdometer.value[0]);
 
-	// 	console.log("  sensor:", data.yOdometer.sensor);
-	// 	console.log("    range:", data.yOdometer.range);
-	// 	console.log("    units:", data.yOdometer.units);
-	// 	console.log("    value:", data.yOdometer.value[0]);
-	// })
+		console.log("  sensor:", data.yOdometer.sensor);
+		console.log("    range:", data.yOdometer.range);
+		console.log("    units:", data.yOdometer.units);
+		console.log("    value:", data.yOdometer.value[0]);
+	})
 	// orb.roll(100,20);
   // orb.color("green");
 })
