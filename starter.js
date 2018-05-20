@@ -6,9 +6,9 @@ var spheroId = process.argv[2]
 var orb = sphero(spheroId)
 
 // TODO: move these to a local lib folder
-var imuAngles = require("./imuAngles")
-var odometer = require("./odometer")
-
+// var imuAngles = require(".data_stream/imuAngles")
+// var odometer = require(".data_stream/odometer")
+var streamData = require("./dataStream")
 
 var stdin = process.openStdin()
 stdin.addListener("data", function(data) {
@@ -26,11 +26,26 @@ orb.connect(function() {
 	console.log("connected... waiting for input:")
 
 	// output sphero sensor data
+	// below is in sphero/lib/devices/custom.js
 	orb.on("imuAngles", function(data) {
-		imuAngles.stream(data)
-	});
+		streamData.imuAngles(data)
+	})
 	orb.on("odometer", function(data) {
-		odometer.stream(data)
-	});
-
+		streamData.odometer(data)
+	})
+	orb.on("gyroscope", function(data) {
+		streamData.gyroscope(data)
+	})
+	orb.on("velocity", function(data) {
+		streamData.velocity(data)
+	})
+	orb.on("accelOne", function(data) {
+		streamData.accelOne(data)
+	})
+	orb.on("accelerometer", function(data) {
+		streamData.accelerometer(data)
+	})
+	orb.on("motorsBackEmf", function(data) {
+		streamData.motorsBackEmf(data)
+	})
 })

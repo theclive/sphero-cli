@@ -19,14 +19,20 @@ Below are the commands available for the CLI:
 * Roll Sphero:
 `roll(speed, direction)`
 
-* Change Sphero's color:
+* Change color:
 `color("some_color")`
 
-* Stream Sphero's Odometer data to the terminal:
-`streamOdometer()`
+* The following commands will stream sensor data to the console:
+```
+streamOdometer()
+streamImuAngles()
+streamGyroscope()
+streamVelocity()
+streamAccelerometer()
+streamAccelOne()
+streamMotorsBackEmf()
+```
 
-* Stream Sphero's angle data to the terminal:
-`streamImuAngles()`
 
 <!--example repl stuff:
 getChassisId().then((a)=>console.log(a))-->
