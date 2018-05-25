@@ -31,12 +31,41 @@ streamAccelOne()
 streamMotorsBackEmf()
 ```
 
+* List of our Sphero IDs:
+```
+Device name	MAC address	        Sphero label
+SK-5186	        F8:CC:A1:A7:51:86	A
+SK-7D19	        FF:AF:08:F6:7D:19	B
+SK-BEAD	        EB:76:90:85:BE:AD	C
+SK-40A2	        F5:77:55:BE:40:A2	D
+SK-C345	        E0:01:D9:64:C3:45	E
+SK-D4A7	        FA:34:A8:E7:D4:A7	F
+SK-0EC0	        FD:94:C6:CA:0E:C0	G
+SK-70C4	        E8:CC:F3:D0:70:C4	H
+SK-EC32	        C7:8A:28:6D:EC:32	I
+SK-76D8	        CB:68:ED:5F:76:D8	J
+SK-2368	        E6:EA:05:40:23:68	K
+```
+
+
+<!--
+  Have a look here for more commands: https://sdk.sphero.com/community-apis/javascript-sdk/
+  getPowerState()
+  sleep()
+  getVoltageTripPoints() && setVoltageTripPoints()
+  setInactivityTimeout()
+  assignTime()
+ -->
 
 <!--example repl stuff:
-getChassisId().then((a)=>console.log(a))-->
+to call function: getChassisId().then((a)=>console.log(a))
+to see function definition getChassisId
+-->
 
+<!--
+  THESE ARE FROM LOOKING INSIDE sphero.js
 
-<!--setHeading            : 0x01,
+  setHeading            : 0x01,
   setStabilization      : 0x02,
   setRotationRate       : 0x03,
   setCreationDate       : 0x04,
