@@ -26,6 +26,7 @@ Test out and learn the commands from [Sphero's Official SDK](https://github.com/
 | I            | SK-EC32        | C7:8A:28:6D:EC:32	| |
 | J            | SK-76D8        | CB:68:ED:5F:76:D8	| |
 | K            | SK-2368        | E6:EA:05:40:23:68	| |
+| L            | SK-E1F8        | C2:92:5C:11:E1:F8	| 5cb4cdd41c1b4b0b8b5b0c185458b31b |
 
 ### Commands and Usage
 The connection to your Sphero is already established when launching the CLI. You therefore don't have to explicitly call the `sphero` (sometimes `orb` is also used) object when issuing commands. You can therefore just go `roll(100,0)` in the CLI.
@@ -44,7 +45,7 @@ function (heading, callback) {
 ```
 
 
-###### Sphero Commands with Description
+##### Sphero Commands with Description
 
 * Roll Sphero:
 `roll(speed, direction)`
@@ -71,7 +72,7 @@ The above serves as an example of the command. For each of the left and right mo
   * `streamAccelOne()`
   * `streamMotorsBackEmf()`
 
-###### All the other Commands (almost)
+##### All the other Commands (almost)
 
 There are many, many commands available to you through the SDK. We've described the most useful commands first, but feel free to experiment with the list below:
 
@@ -127,8 +128,6 @@ There are many, many commands available to you through the SDK. We've described 
   commitToFlash
   _commitToFlashAlias
 ```
-
-
 
 <!--
   Have a look here for more commands: https://sdk.sphero.com/community-apis/javascript-sdk/
