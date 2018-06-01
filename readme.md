@@ -17,7 +17,7 @@ Test out and learn the commands from [Sphero's Official SDK](https://github.com/
 | -------------| -------------- | ----------------- | -------------------------------- |
 | A            | SK-5186        | F8:CC:A1:A7:51:86	| |
 | B            | SK-7D19        | FF:AF:08:F6:7D:19	| |
-| C            | SK-BEAD        | EB:76:90:85:BE:AD	| |
+| C            | SK-BEAD        | EB:76:90:85:BE:AD	| 38a2cd60b8f14032896de2c9739d5ffe |
 | D            | SK-40A2        | F5:77:55:BE:40:A2	| |
 | E            | SK-C345        | E0:01:D9:64:C3:45	| |
 | F            | SK-D4A7        | FA:34:A8:E7:D4:A7	| |
