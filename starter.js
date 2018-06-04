@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const sphero = require("sphero")
-const spheroId = '5cb4cdd41c1b4b0b8b5b0c185458b31b'
-// const spheroId = process.argv[2]
+
+const spheroId = process.argv[2]
 const orb = sphero(spheroId)
 
 const streamData = require("./lib/dataStream")
@@ -54,3 +54,7 @@ orb.connect(() => {
 	})
 
 })
+
+orb.disconnect(() => {
+
+});
