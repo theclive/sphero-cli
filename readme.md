@@ -27,7 +27,10 @@ Test out and learn the commands from [Sphero's Official SDK](https://github.com/
 | J            | SK-76D8        | CB:68:ED:5F:76:D8	| |
 | K            | SK-2368        | E6:EA:05:40:23:68	| |
 | L            | SK-E1F8        | C2:92:5C:11:E1:F8	| |
-| M            | SK-E1F8        | C2:92:5C:11:E1:F8	| 5cb4cdd41c1b4b0b8b5b0c185458b31b |
+| O            | SK-5FCA        | F4:C3:EB:77:5F:CA	| |
+| P            | SK-E8F5        | C1:EA:BB:43:E8:F5 | |
+
+<!-- | M            | SK-E1F8        | C2:92:5C:11:E1:F8	| 5cb4cdd41c1b4b0b8b5b0c185458b31b | -->
 
 ### Commands and Usage
 The connection to your Sphero is already established when launching the CLI. You therefore don't have to explicitly call the `sphero` (sometimes `orb` is also used) object when issuing commands. You can therefore just go `roll(100,0)` in the CLI.
