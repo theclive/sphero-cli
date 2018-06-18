@@ -13,24 +13,7 @@ Test out and learn the commands from [Sphero's Official SDK](https://github.com/
 
 #### List of our Sphero IDs:
 
-| Sphero Label | Device name	  | MAC address       | Device ID                        |
-| -------------| -------------- | ----------------- | -------------------------------- |
-| A            | SK-5186        | F8:CC:A1:A7:51:86	| |
-| B            | SK-7D19        | FF:AF:08:F6:7D:19	| |
-| C            | SK-BEAD        | EB:76:90:85:BE:AD	| 38a2cd60b8f14032896de2c9739d5ffe |
-| D            | SK-40A2        | F5:77:55:BE:40:A2	| |
-| E            | SK-C345        | E0:01:D9:64:C3:45	| |
-| F            | SK-D4A7        | FA:34:A8:E7:D4:A7	| 47936f015f7148ae9ed81ef2a08f91b4 |
-| G            | SK-0EC0        | FD:94:C6:CA:0E:C0	| |
-| H            | SK-70C4        | E8:CC:F3:D0:70:C4	| 6542b255dc1741089e5fa58752f67fea |
-| I            | SK-EC32        | C7:8A:28:6D:EC:32	| |
-| J            | SK-76D8        | CB:68:ED:5F:76:D8	| |
-| K            | SK-2368        | E6:EA:05:40:23:68	| |
-| L            | SK-E1F8        | C2:92:5C:11:E1:F8	| |
-| O            | SK-5FCA        | F4:C3:EB:77:5F:CA	| |
-| P            | SK-E8F5        | C1:EA:BB:43:E8:F5 | |
-
-<!-- | M            | SK-E1F8        | C2:92:5C:11:E1:F8	| 5cb4cdd41c1b4b0b8b5b0c185458b31b | -->
+These can be found in the [info and tips document](https://github.com/OfferZen-Make/make-robots-iot/blob/master/info_and_tips.md).
 
 ### Commands and Usage
 The connection to your Sphero is already established when launching the CLI. You therefore don't have to explicitly call the `sphero` (sometimes `orb` is also used) object when issuing commands. You can therefore just go `roll(100,0)` in the CLI.
@@ -51,8 +34,15 @@ function (heading, callback) {
 
 ##### Sphero Commands with Description
 
+Below is our own documentation for controlling Sphero. Alternatively, you can look at [the SDK's examples](https://github.com/orbotix/sphero.js/tree/master/examples) or at the [Javascript API in the official docs](https://sdk.sphero.com/community-apis/javascript-sdk/) (not recommended!).
+
 * Roll Sphero:
 `roll(speed, direction)`
+
+* Change Sphero's motion time-out value (in milliseconds):
+`setMotionTimeout(2000)`
+Sphero won't roll forever! It'll roll as long as you tell it to :)
+
 
 * Change color:
 `color('some_color')`
