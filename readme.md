@@ -34,7 +34,7 @@ function (heading, callback) {
 
 ##### Sphero Commands with Description
 
-Below is our own documentation for controlling Sphero. Alternatively, you can look at [the SDK's examples](https://github.com/orbotix/sphero.js/tree/master/examples) or at the [Javascript API in the official docs](https://sdk.sphero.com/community-apis/javascript-sdk/) (not recommended!).
+Below is our own documentation for controlling Sphero. Alternatively, you can look at [the SDK's examples](https://github.com/orbotix/sphero.js/tree/master/examples) or at the [Javascript API in the official docs](https://sdk.sphero.com/community-apis/javascript-sdk/).
 
 * Roll Sphero:
 `roll(speed, direction)`
