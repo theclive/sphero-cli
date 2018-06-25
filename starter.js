@@ -25,6 +25,7 @@ orb.connect(() => {
 
 	console.log("connected... waiting for input:")
 
+	orb.color('blue')
 	// output sphero sensor data
 	// below is in sphero/lib/devices/custom.js
 	orb.on("imuAngles", function(data) {
